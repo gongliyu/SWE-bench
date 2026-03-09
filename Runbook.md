@@ -22,27 +22,27 @@ cd path/to/swe-agent
 ```
 ### GPT-5.3-codex
 ```shell
-python -m swebench.harness.run_evaluation \                        [11:55:11]
-    --dataset_name princeton-nlp/SWE-bench_Lite \
+python -m swebench.harness.run_evaluation \
+    --dataset_name princeton-nlp/SWE-bench_lite \
     --predictions_path trajectories/eval_gpt_53/preds.json \
-    --max_workers 2 \
+    --max_workers 4 \
     --run_id gpt_53_codex_run
 ```
 
 ### Claude-sonnet-4.6
 ```shell
-python -m swebench.harness.run_evaluation \                        [11:55:11]
-    --dataset_name princeton-nlp/SWE-bench_Lite \
+python -m swebench.harness.run_evaluation \
+    --dataset_name princeton-nlp/SWE-bench_lite \
     --predictions_path trajectories/eval_claude_sonnet_4_6/preds.json \
-    --max_workers 2 \
+    --max_workers 4 \
     --run_id claude_sonnet_4_6_run
 ```
 
 ### Claude-opus-4.6
 ```shell
-python -m swebench.harness.run_evaluation \                        [11:55:11]
-    --dataset_name princeton-nlp/SWE-bench_Lite \
+python -m swebench.harness.run_evaluation \
+    --dataset_name princeton-nlp/SWE-bench_lite \
     --predictions_path trajectories/eval_claude_opus_4_6/preds.json \
-    --max_workers 2 \
+    --max_workers 4 \
     --run_id claude_opus_4_6_run
 ```
